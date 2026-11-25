@@ -1,0 +1,9 @@
+{
+  "name": "ai-email-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Validation utilities for the n8n AI email automation workflow",
+  "scripts": {
+    "test": "node tests/validate-workflow.js"
+  }
+}
