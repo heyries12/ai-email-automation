@@ -89,7 +89,7 @@
       "id": "cd50527f-478e-42d1-884d-1f5014d42aa7",
       "name": "Merge Email and AI",
       "type": "n8n-nodes-base.merge",
-      "typeVersion": 3.3,
+      "typeVersion": 3.2,
       "position": [
         -60,
         160

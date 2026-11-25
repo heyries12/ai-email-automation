@@ -10,6 +10,7 @@ const workflow = JSON.parse(fs.readFileSync(workflowPath, 'utf8'));
 const nodesByName = new Map(workflow.nodes.map((node) => [node.name, node]));
 assert.equal(nodesByName.size, workflow.nodes.length, 'Node names must be unique');
 assert.equal(workflow.active, false, 'Imported workflow must be inactive by default');
+assert.equal(nodesByName.get('Merge Email and AI').typeVersion, 3.2, 'Merge must support n8n Cloud workspaces that have not upgraded to 3.3');
 
 for (const [source, connectionTypes] of Object.entries(workflow.connections)) {
   assert(nodesByName.has(source), `Unknown connection source: ${source}`);
